@@ -1,2 +1,3 @@
 # js-calculator
-This is a calcuator made with js.
+---
+This is a basic calcuator made with js.
