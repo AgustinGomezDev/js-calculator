@@ -1,0 +1,97 @@
+:root{
+    --dark1: #0d1117;
+    --dark2: #161b22;
+    --green: #238636;
+    --blue: #3099ff;
+    --red: #cc3636;
+    --white: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--dark1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    color: var(--blue);
+    font-size: 50px;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+.subtitle{
+    margin-top: 15px;
+    font-size: 15px;
+    color: var(--white);
+}
+
+.subtitle a{
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.subtitle a:hover{
+    cursor: pointer;
+    filter: brightness(115%);
+}
+
+.display{
+    width: 540px;
+    height: 60px;
+    padding: 0 15px;
+    margin-bottom: 5px;
+    background-color: var(--dark2);
+    border-radius: 5px;
+    font-size: 25px;
+    border: none;
+    color: var(--white);
+    text-align: right;
+}
+
+.display:focus{
+    outline: none;
+}
+
+.grid{
+    width: 550px;
+    height: 240px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.button{
+    margin: 5px;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--dark2);
+    color: var(--white);
+    font-size: 20px;
+}
+
+.button:hover{
+    cursor: pointer;
+    filter: brightness(150%);
+}
+
+.red-button{
+    background-color: var(--red);
+}
+
+.green-button{
+    background-color: var(--green);
+}
